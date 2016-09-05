@@ -1,0 +1,21 @@
+{
+  "name": "miEscuela",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Mi Escuela"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.97.7"
+  }
+}
