@@ -32,49 +32,96 @@ block content
         .container
           .nav-wrapper
             a.page-title SideNav
-      .container
-        a.button-collapse.top-nav.full.hide-on-large-only(href='#', data-activates='nav-mobile')
-          i.material-icons menu
+        .container
+            a.button-collapse.top-nav.full.hide-on-large-only(href='#', data-activates='nav-mobile')
+              i.material-icons menu
       ul#nav-mobile.side-nav.fixed(style='transform: translateX(0%);')
-        li.logo
-          a#logo-container.brand-logo(href='http://materializecss.com/')
-            object#front-page-logo(type='image/svg+xml', data='res/materialize.svg') Your browser does not support SVG
-        li.search
-          .search-wrapper.card
-            input#search
-            i.material-icons search
-            .search-results
-        li.bold
-          a.waves-effect.waves-teal(href='about.html') Sobre Materialize
-        li.bold
-          a.waves-effect.waves-teal(href='getting-started.html') Introducción
-        li.no-padding
-          ul.collapsible.collapsible-accordion
-            li.bold
-              a.collapsible-header.waves-effect.waves-teal CSS
-              .collapsible-body(style='')
-                ul
-                  li
-                    a(href='color.html') Color
-                  li
-                    a(href='grid.html') Grid
-            li.bold
-              a.collapsible-header.waves-effect.waves-teal Components
-              .collapsible-body(style='')
-                ul
-                  li
-                    a(href='badges.html') Badges
-                  li
-                    a(href='buttons.html') Buttons
-            li.bold.active
-              a.collapsible-header.active.waves-effect.waves-teal JavaScript
-              .collapsible-body(style='display: block;')
-                ul
-                  li
-                    a(href='carousel.html') Carousel
-                  li
-                    a(href='collapsible.html') Collapsible
-        li.bold
-          a.waves-effect.waves-teal(href='http://materializecss.com/mobile.html') Mobile
-        li.bold
-          a.waves-effect.waves-teal(href='showcase.html') Vitrina
+        //- li.logo
+        //-   a#logo-container.brand-logo(href='http://materializecss.com/')
+        //-     object#front-page-logo(type='image/svg+xml', data='res/materialize.svg') Your browser does not support SVG
+        li
+            .userView
+              img.background(src='images/office.jpg')
+              a(href='#!user')
+                img.circle(src='images/yuna.jpg')
+              a(href='#!name')
+                span.white-text.name John Doe
+              a(href='#!email')
+                span.white-text.email jdandturk@gmail.com
+        li
+            a(href='#!')
+              i.material-icons cloud
+              | First Link With Icon
+        li
+            a(href='#!') Second Link
+        li
+            .divider
+        li
+            a.subheader Subheader
+        li
+            a.waves-effect(href='#!') Third Link With Waves
+        //- li.search
+        //-   .search-wrapper.card
+        //-     input#search
+        //-     i.material-icons search
+        //-     .search-results
+        //- li.bold
+        //-   a.waves-effect.waves-teal(href='about.html') Sobre Materialize
+        //- li.bold
+        //-   a.waves-effect.waves-teal(href='getting-started.html') Introducción
+        //- li.no-padding
+        //-   ul.collapsible.collapsible-accordion
+        //-     li.bold
+        //-       a.collapsible-header.waves-effect.waves-teal CSS
+        //-       .collapsible-body(style='')
+        //-         ul
+        //-           li
+        //-             a(href='color.html') Color
+        //-           li
+        //-             a(href='grid.html') Grid
+        //-     li.bold
+        //-       a.collapsible-header.waves-effect.waves-teal Components
+        //-       .collapsible-body(style='')
+        //-         ul
+        //-           li
+        //-             a(href='badges.html') Badges
+        //-           li
+        //-             a(href='buttons.html') Buttons
+        //-     li.bold.active
+        //-       a.collapsible-header.active.waves-effect.waves-teal JavaScript
+        //-       .collapsible-body(style='display: block;')
+        //-         ul
+        //-           li
+        //-             a(href='carousel.html') Carousel
+        //-           li
+        //-             a(href='collapsible.html') Collapsible
+        //- li.bold
+        //-   a.waves-effect.waves-teal(href='http://materializecss.com/mobile.html') Mobile
+        //- li.bold
+        //-   a.waves-effect.waves-teal(href='showcase.html') Vitrina
+
+
+      ul#slide-out.side-nav
+          li
+            .userView
+              img.background(src='images/office.jpg')
+              a(href='#!user')
+                img.circle(src='images/yuna.jpg')
+              a(href='#!name')
+                span.white-text.name John Doe
+              a(href='#!email')
+                span.white-text.email jdandturk@gmail.com
+          li
+            a(href='#!')
+              i.material-icons cloud
+              | First Link With Icon
+          li
+            a(href='#!') Second Link
+          li
+            .divider
+          li
+            a.subheader Subheader
+          li
+            a.waves-effect(href='#!') Third Link With Waves
+          a.button-collapse(href='#', data-activates='slide-out')
+            i.material-icons menu
